@@ -9,6 +9,7 @@
   </head>
   <body>
     <header>
+      <!-- Desktop Header -->
       <div class="desktop-header">
         <div class="logo">
           <img src="./resources/images/ic-logo.svg" alt="Colmar logo" />
@@ -21,9 +22,18 @@
           <a href="#">Sign in</a>
         </div>
       </div>
+
+      <!-- Mobile Header -->
+      <div class="mobile-header">
+        <a href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar logo"/></a>
+        <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="Desk icon" /></a>
+        <a href="#"><img src="./resources/images/ic-online.svg" alt="Desktop icon" /></a>
+        <a href="#"><img src="./resources/images/ic-login.svg" alt="Login icon" /></a>
+      </div>
     </header>
 
-    <section class="banner lightgray section-padding">
+    <!-- Main Banner -->
+    <section class="banner section-padding">
       <div class="img-container">
         <img src="./resources/images/banner.jpg" alt="Students studying" />
       </div>
@@ -34,6 +44,7 @@
       </div>
     </section>
 
+    <!-- Supporting Section -->
     <section class="supporting section-padding">
       <div class="information-main">
         <div class="img-container">
@@ -55,8 +66,11 @@
       </div>
       <div class="supporting-items">
         <div class="item first">
-          <div class="img-container thumbnail">
+          <div class="img-container thumbnail desktop">
             <img src="./resources/images/information-orientation.jpg" alt="People walking" />
+          </div>
+          <div class="img-container thumbnail mobile">
+            <img src="./resources/images/information-orientation-mobile.jpg" alt="People walking" />
           </div>
           <div class="item-text">
             <h3>Orientation Date</h3>
@@ -65,8 +79,11 @@
           </div>
         </div>
         <div class="item second">
-          <div class="img-container thumbnail">
+          <div class="img-container thumbnail desktop">
             <img src="./resources/images/information-campus.jpg" alt="Room with people studying" />
+          </div>
+          <div class="img-container thumbnail mobile">
+            <img src="./resources/images/information-campus-mobile.jpg" alt="Room with people studying" />
           </div>
           <div class="item-text">
             <h3>Our Campus</h3>
@@ -75,8 +92,11 @@
           </div>
         </div>
         <div class="item">
-          <div class="img-container thumbnail">
+          <div class="img-container thumbnail desktop">
             <img src="./resources/images/information-guest-lecture.jpg" alt="Man with glasses" />
+          </div>
+          <div class="img-container thumbnail mobile">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Man with glasses" />
           </div>
           <div class="item-text" >
             <h3>Our guest lecture</h3>
@@ -87,9 +107,12 @@
       </div>
     </section>
 
-    <section class="programs lightgray">
+    <!-- Program Section  -->
+    <section class="programs">
       <h2>Start learning</h2>
-      <div class="program-grid">
+
+      <!-- Desktop Grid -->
+      <div class="program-grid desktop">
         <div class="program-item">
           <div class="img-container">
             <img src="./resources/images/course-software.jpg" alt="Computer screens" />
@@ -152,6 +175,28 @@
           </div>
         </div>
       </div>
+
+      <!-- Mobile Grid  -->
+      <div class="program-grid mobile">
+        <div class="program-item">
+          <h3>Software engineering</h3>
+        </div>
+        <div class="program-item">
+          <h3>Computer art</h3>
+        </div>
+        <div class="program-item">
+          <h3>Design</h3>
+        </div>
+        <div class="program-item">
+          <h3>Data</h3>
+        </div>
+        <div class="program-item">
+          <h3>Business</h3>
+        </div>
+        <div class="program-item">
+          <h3>Marketing</h3>
+        </div>
+      </div>
     </section>
 
     <section class="exhibit section-padding">
@@ -191,11 +236,12 @@
       </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
-      <div>
+      <div class="copyright">
         <span>&copy; 2016 Colmar Academy. All rights reserved</span>
       </div>
-      <div>
+      <div class="terms">
         <a href="#">Terms</a>
         <a href="#">Privacy</a>
       </div>
