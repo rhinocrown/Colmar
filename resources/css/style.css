@@ -53,33 +53,33 @@ a {
 
 
 /* Header styles*/
-header .desktop-header {
+.desktop-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
 }
 
-header .mobile-header {
+.mobile-header {
   display: none;
 }
 
-header .logo {
+.logo {
   display: flex;
   align-items: center;
   margin-left: 1.5rem;
   height: 2rem;
 }
 
-header .logo span {
+.logo span {
   font-size: 1.5rem;
 }
 
-header .nav {
+.nav {
   margin-right: 1.5rem;
 }
 
-header .nav a {
+.nav a {
   padding: 1rem;
 }
 
@@ -89,23 +89,24 @@ header .nav a {
 }
 
 @media only screen and (max-width: 480px) {
-  header .mobile-header {
+  .mobile-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 4rem;
   }
 
-  header .mobile-header a {
+  .mobile-header a {
     padding: 0.2rem;
     border-radius: 30%;
+    transition: background-color 0.2s linear 0.05s;
   }
 
-  header .mobile-header a:hover {
+  .mobile-header a:hover {
     background-color:#e2e2e2;
   }
 
-  header .desktop-header {
+  .desktop-header {
     display: none;
   }
 }
@@ -313,10 +314,6 @@ header .nav a {
   flex-wrap: wrap;
 }
 
-.program-grid.mobile {
-  display: none;
-}
-
 .program-item {
   width: 30%;
   padding-bottom: 1.5rem;
@@ -342,30 +339,73 @@ header .nav a {
   line-height: 1.7;
 }
 
+.mobile-program-grid {
+  display: none;
+}
+
+.mobile-program-item {
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #e2e2e2;
+  transition: background-color 0.2s linear 0.1s;
+}
+
+.mobile-program-item a {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mobile-program-item:hover {
+  background-color: lightblue;
+  transition: background-color 0.2s linear 0.1s;
+}
+
+.courses {
+  color: #364046;
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  height: 0;
+  transition: height 0.2s ease-out 0.2s,
+              opacity 0.05s linear 0.02s,
+              padding-top 0.2s linear 0.2s,
+              padding-bottom 0.2s linear 0.2s;
+}
+
+.mobile-program-item:hover .courses {
+  height: 5rem;
+  opacity: 1;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  transition: height 0.2s ease-out 0.2s,
+              opacity 0.2s linear 0.2s,
+              padding-top 0.2s linear 0.2s,
+              padding-bottom 0.2s linear 0.2s;
+}
+
+.courses p {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
 @media only screen and (max-width: 480px) {
   .programs {
     padding: 1rem;
     background-color: white;
   }
 
-  .program-grid.desktop {
+  .program-grid {
     display: none;
   }
 
-  .program-grid.mobile {
+  .mobile-program-grid {
     display: flex;
     flex-direction: column;
-  }
-
-  .program-item {
-    width: 90%;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    background-color: #e2e2e2;
-  }
-
-  .program-item:hover {
-    background-color: lightblue;
   }
 }
 
