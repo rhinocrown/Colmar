@@ -231,6 +231,10 @@ header .nav a {
   margin-bottom: 2rem;
 }
 
+.mobile {
+  display: none;
+}
+
 .item {
   display: flex;
   align-items: center;
@@ -307,6 +311,10 @@ header .nav a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.program-grid.mobile {
+  display: none;
 }
 
 .program-item {
