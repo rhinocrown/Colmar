@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
@@ -15,16 +15,16 @@
           <img src="./resources/images/ic-logo.svg" alt="Colmar logo" />
           <span class="bold">COLMAR</span><span>ACADEMY</span>
         </div>
-        <div class="nav">
+        <nav>
           <a href="#">On Campus</a>
           <a href="#">Online</a>
           <a href="#">For companies</a>
           <a href="#">Sign in</a>
-        </div>
+        </nav>
       </div>
 
       <!-- Mobile Header -->
-      <div class="mobile-header">
+      <div class="mobile-header" role="heading">
         <a href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar logo"/></a>
         <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="Desk icon" /></a>
         <a href="#"><img src="./resources/images/ic-online.svg" alt="Desktop icon" /></a>
@@ -33,14 +33,14 @@
     </header>
 
     <!-- Main Banner -->
-    <section class="banner section-padding">
+    <section class="banner section-padding" role="banner">
       <div class="img-container">
         <img src="./resources/images/banner.jpg" alt="Students studying" />
       </div>
       <div class="banner-text">
         <h1>Learn something new everyday</h1>
         <h3>Lorem ipsom dolor sit amet, consectetur adipiscing elit.</h3>
-        <a href role="button">Start here</a>
+        <a href="#" role="button">Start here</a>
       </div>
     </section>
 
@@ -112,7 +112,7 @@
       <h2>Start learning</h2>
 
       <!-- Desktop Grid -->
-      <div class="program-grid">
+      <div class="program-grid" role="presentation">
         <div class="program-item">
           <div class="img-container">
             <img src="./resources/images/course-software.jpg" alt="Computer screens" />
@@ -177,49 +177,55 @@
       </div>
 
       <!-- Mobile Grid  -->
-      <div class="mobile-program-grid">
+      <div class="mobile-program-grid" role="presentation">
         <div class="mobile-program-item">
-          <a href=""><h3>Software engineering</h3></a>
-          <div class="courses">
-            <span>COURSES</span>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
-          </div>
+          <a href="#"><h3>Software engineering</h3>
+            <div class="courses">
+              <span>COURSES</span>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </a>
         </div>
         <div class="mobile-program-item">
-          <a href=""><h3>Computer art</h3></a>
+          <a href="#"><h3>Computer art</h3>
           <div class="courses">
-            <span>COURSES</span>
-            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects,
-            Computer Animation</p>
-          </div>
+              <span>COURSES</span>
+              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+              Computer Animation</p>
+            </div>
+          </a>
         </div>
         <div class="mobile-program-item">
-          <a href=""><h3>Design</h3></a>
-          <div class="courses">
-            <span>COURSES</span>
-            <p>User Experience Design, User Research, Visual Design</p>
-          </div>
+          <a href="#"><h3>Design</h3>
+            <div class="courses">
+              <span>COURSES</span>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
+          </a>
         </div>
         <div class="mobile-program-item">
-          <a href=""><h3>Data</h3></a>
-          <div class="courses">
-            <span>COURSES</span>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
-          </div>
+          <a href="#"><h3>Data</h3>
+            <div class="courses">
+              <span>COURSES</span>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+          </a>
         </div>
         <div class="mobile-program-item">
-          <a href=""><h3>Business</h3></a>
-          <div class="courses">
-            <span>COURSES</span>
-            <p>Product Development, Business Development, Startup</p>
-          </div>
+          <a href="#"><h3>Business</h3>
+            <div class="courses">
+              <span>COURSES</span>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
+          </a>
         </div>
         <div class="mobile-program-item">
-          <a href=""><h3>Marketing</h3></a>
-          <div class="courses">
-            <span>COURSES</span>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
-          </div>
+          <a href="#"><h3>Marketing</h3>
+            <div class="courses">
+              <span>COURSES</span>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -228,7 +234,7 @@
       <h2>Thesis exhibit</h2>
       <div class="exhibit-content">
         <div class="exhibit-video">
-          <video src="./resources/videos/thesis.mp4" autoplay="false" controls="true">Thesis video</video>
+          <video src="./resources/videos/thesis.mp4" autoplay controls>Thesis video</video>
           <h3>Reimagine urban</h3>
           <p>
             "Praesent quis tellus euismod, sollicitudin ante ac, varius erat. Nam
