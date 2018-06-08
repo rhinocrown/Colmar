@@ -6,6 +6,11 @@ html {
 body {
   font-family: "Rubik";
   color: #838383;
+  background: linear-gradient(#e7e3d4, #e7dad4, #e2e7d4);
+}
+
+div {
+  border-radius: 0.5rem;
 }
 
 img {
@@ -39,12 +44,13 @@ h3 {
 }
 
 a {
-  color: #6093ca;
+  color: #364046;
   text-decoration: none;
 }
 
 .img-container {
   overflow: hidden;
+  border-radius: 1%;
 }
 
 .section-padding {
@@ -53,11 +59,28 @@ a {
 
 
 /* Header styles*/
+header {
+  background-color: #c0c0c0;
+}
+
+.academy {
+  font-weight: 200;
+  /*color: #374785;*/
+}
+
 .desktop-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
+}
+
+.desktop-header a {
+  transition: color 0.1s linear 0.1s;
+}
+
+.desktop-header a:hover {
+  color: #45b3e0;
 }
 
 .mobile-header {
@@ -115,7 +138,6 @@ nav a {
 .banner {
   display: flex;
   align-items: center;
-  background-color: #e2e2e2;
 }
 
 .banner .img-container {
@@ -139,13 +161,21 @@ nav a {
 
 .banner-text a {
   display: block;
-  color: white;
+  color: #ededed;
   background-color: #364046;
   text-decoration: none;
   text-align: center;
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  border-radius: 1rem;
+  transition: box-shadow 0.1s ease-out 0.1s,
+              color 0.1s ease-out 0.1s;
+}
+
+.banner-text a:hover {
+  box-shadow: 5px 5px 5px grey;
+  color: #45b3e0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -162,8 +192,9 @@ nav a {
   }
 
   .banner-text {
-    max-width: 90%;
+    max-width: 100%;
     margin-left: 0;
+    padding: 1rem;
   }
 
   .banner-text h1 {
@@ -173,10 +204,6 @@ nav a {
 
   .banner-text h3 {
     padding-bottom: 1.5rem;
-  }
-
-  .banner-text a:hover {
-    color: skyblue;
   }
 }
 
@@ -204,15 +231,26 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 35%;
+  height: 40%;
+  margin-top: 1rem;
+  background-color: #ededed;
+}
+
+.information-main-text {
+  padding: 1rem;
 }
 
 .information-main-text h2 {
-  padding: 2rem 0 1.5rem 0;
+  margin-bottom: 1.5rem;
 }
 
 .information-main-text p {
   line-height: 1.7;
+}
+
+.information-main-caption {
+  padding-left: 1rem;
+  padding-bottom: 0.25rem;
 }
 
 .supporting-items {
@@ -224,7 +262,7 @@ nav a {
 .thumbnail {
   max-width: 35%;
   max-height: auto;
-  padding-left: 2.5rem;
+  padding: 1rem 0 1rem 1rem
 }
 
 .first,
@@ -239,6 +277,8 @@ nav a {
 .item {
   display: flex;
   align-items: center;
+  margin-left: 1.25rem;
+  background-color: #ededed;
 }
 
 .item-text {
@@ -253,6 +293,12 @@ nav a {
 .item-text a {
   display: block;
   margin-top: 0.5rem;
+  color: #45b3e0;
+  transition: color 0.1s linear 0.1s;
+}
+
+.item-text a:hover {
+  color: #1f8dba;
 }
 
 .item-text span {
@@ -282,6 +328,8 @@ nav a {
 
   .item {
     flex-direction: column;
+    margin-left: 0;
+    padding: 1rem;
   }
 
   .thumbnail {
@@ -294,13 +342,11 @@ nav a {
       padding-left: 2rem;
       padding-top: 2rem;
   }
-
 }
 
 /* Programs section styles */
 .programs {
   padding: 2rem 4.5rem;
-  background-color: #e2e2e2;
 }
 
 .programs h2 {
@@ -316,7 +362,9 @@ nav a {
 
 .program-item {
   width: 30%;
-  padding-bottom: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #ededed;
 }
 
 .program-item .img-container {
@@ -344,10 +392,9 @@ nav a {
 }
 
 .mobile-program-item {
-  width: 90%;
   padding: 1rem;
   margin-bottom: 0.5rem;
-  background-color: #e2e2e2;
+  background-color: #ededed;
   transition: background-color 0.2s linear 0.1s;
 }
 
@@ -358,7 +405,7 @@ nav a {
 }
 
 .mobile-program-item:hover {
-  background-color: lightblue;
+  background-color: #d4ebf2;
   transition: background-color 0.2s linear 0.1s;
 }
 
@@ -396,7 +443,6 @@ nav a {
 @media only screen and (max-width: 480px) {
   .programs {
     padding: 1rem;
-    background-color: white;
   }
 
   .program-grid {
@@ -428,8 +474,13 @@ nav a {
   max-width: 100%;
 }
 
+.exhibit-video-text {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  background-color: #ededed;
+}
+
 .exhibit-video h3 {
-  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -447,15 +498,14 @@ nav a {
   }
 
   .exhibit.section-padding {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
   }
 
   .exhibit-video {
     width: 100%;
   }
 
-  .exhibit-video h3,
-  p {
+  .exhibit-video-text {
     display: none;
   }
 }
@@ -465,6 +515,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+  background-color: #c0c0c0;
+  color: #364046;
 }
 
 @media only screen and (max-width: 480px) {
